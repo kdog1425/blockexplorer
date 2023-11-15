@@ -1,6 +1,6 @@
 import { Alchemy, Network } from 'alchemy-sdk';
 import { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Link, } from 'react-router-dom';
+import { BrowserRouter as Router, Route, } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import ObjectTable from './ObjectTable';
 import TxDetails from './TxDetails';

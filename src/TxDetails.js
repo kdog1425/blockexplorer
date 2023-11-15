@@ -1,5 +1,4 @@
 import React, { useMemo } from 'react';
-import ScrollableList from './ScrollableList';
 import ObjectTable from './ObjectTable';
 import { useQuery } from 'react-query';
 import { useParams, Link } from 'react-router-dom';
@@ -33,7 +32,7 @@ const TxDetails = ({ alchemy }) => {
   return (
     <>
        <nav style={Nav}>  
-        <Link to="/" style={Link}>Back to Block Explorer</Link>
+        <Link to="/" style={LinkStyle}>Back to Block Explorer</Link>
       </nav>
       <div style={TxId}>Transaction ID: {txId}</div>
       <ObjectTable data={txDetails} />
@@ -63,7 +62,7 @@ const Loading = {
   height: '2000px',
 }
 
-const Link = {
+const LinkStyle = {
   color: 'white'
 }
 

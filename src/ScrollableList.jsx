@@ -9,7 +9,7 @@ const ScrollableList = ({ items }) => {
       <ul style={{ listStyleType: 'none', padding: 0 }}>
         {items.map((txId, index) => (
           <li key={index} style={{ borderBottom: '1px solid #eee', padding: '10px' }}>
-            <Link style={Link} to={`/tx/${txId}`}>{txId}</Link>
+            <Link style={LinkStyle} to={`/tx/${txId}`}>{txId}</Link>
           </li>
         ))}
       </ul>
@@ -17,8 +17,8 @@ const ScrollableList = ({ items }) => {
   );
 };
 
-const Link = {
-  {color: 'white'}
+const LinkStyle = {
+  color: 'white'
 }
 
 export default ScrollableList;

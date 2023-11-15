@@ -9,12 +9,6 @@ const ObjectTable = ({ data }) => {
 
   return (
     <table style={{margin: '0 auto', width: '100%', borderCollapse: 'collapse', fontFamily: 'Roboto, sans-serif' }}>
-      {/* <thead>
-        <tr>
-          <th style={tableHeaderStyle}>Key</th>
-          <th style={tableHeaderStyle}>Value</th>
-        </tr>
-      </thead> */}
       <tbody>
         {keys.map((key, index) => (
           <tr key={index} style={index % 2 === 0 ? evenRowStyle : oddRowStyle}>
@@ -27,12 +21,7 @@ const ObjectTable = ({ data }) => {
   );
 };
 
-const tableHeaderStyle = {
-    background: '#282c34', // Dark background similar to many terminals
-    color: '#61dafb', // Contrasting text color
-    padding: '10px',
-    textAlign: 'left',
-  };
+
   
   const evenRowStyle = {
     background: '#353b45', // Slightly lighter than the header background
