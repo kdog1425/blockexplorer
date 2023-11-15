@@ -33,7 +33,7 @@ const TxDetails = ({ alchemy }) => {
   return (
     <>
        <nav style={Nav}>  
-        <Link to="/" style={{color: 'white'}}>Back to Block Explorer</Link>
+        <Link to="/" style={Link}>Back to Block Explorer</Link>
       </nav>
       <div style={TxId}>Transaction ID: {txId}</div>
       <ObjectTable data={txDetails} />
@@ -62,5 +62,10 @@ const Loading = {
   color: 'white',
   height: '2000px',
 }
+
+const Link = {
+  color: 'white'
+}
+
 
 export default TxDetails;
